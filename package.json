@@ -16,7 +16,7 @@
     "mongoose": "^5.4.10",
     "next": "latest",
     "node-sass": "^4.11.0",
-    "react": "^16.7.0",
+    "react": "^16.8.0",
     "react-dom": "^16.7.0",
     "react-router-dom": "^4.3.1"
   }
