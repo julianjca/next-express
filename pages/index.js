@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Home = () => (
-  <div>
-    <h1>this is the home page</h1>
-  </div>
-)
+const Home = () => {
+  const [count, setCount] = useState(0);
+
+  return(
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  )
+}
 
 export default Home;
