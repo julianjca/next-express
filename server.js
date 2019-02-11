@@ -9,8 +9,8 @@ const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handle = app.getRequestHandler();
 
-//getting database configuration
-require('./config/db');
+// getting database configuration
+require('./configs/db');
 
 app.prepare().then(() => {
   const server = express();
@@ -22,6 +22,7 @@ app.prepare().then(() => {
     directory: 'controllers'
   }));
 
+  //Next js rendering
   server.get('*', (req, res) => {
     return handle(req, res);
   });
